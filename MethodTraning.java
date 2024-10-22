@@ -16,6 +16,10 @@ public class MethodTraning {
 
         System.out.println("");
         System.out.println("");
+
+        printOnlySting("Show this method void return");
+
+        System.out.println("");
         System.out.println("========Method traning end========");
 
     }
@@ -35,5 +39,9 @@ public class MethodTraning {
         }
 
         return total;
-     }
+    }
+
+    static void printOnlySting (String typeString) {
+        System.out.println(typeString);
+    }
 }
