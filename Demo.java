@@ -21,5 +21,20 @@ public class Demo {
 
         // 靜態方法呼叫
         Person.callNuckNameWithStatic();
+
+        // 實作(實體化)類別(Class) 變成物件(Object)
+        Car car1 = new Car("001","blue", false, 10);
+        Car car2 = new Car("002","yellow", true, 20);
+        Car car3 = new Car("003","red", false, 15);
+        Car car4 = new Car("004","black", false, 30);
+
+        // 物件呼叫方法
+        car1.showCarInfo();
+        car2.showCarInfo();
+        car3.showCarInfo();
+        car4.showCarInfo();
+
+        // 靜態方法呼叫
+        Car.showCompanyWithStatic();
     }
 }
