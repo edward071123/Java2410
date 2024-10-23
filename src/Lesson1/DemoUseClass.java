@@ -1,5 +1,7 @@
 package Lesson1;
 public class DemoUseClass {
+
+    /* 如何呼叫使用類別 */
     public static void main(String[] args) throws Exception {
 
         // 想像情境: 登入報名(填寫報名的名字登入到系統建檔)
