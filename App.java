@@ -1,57 +1,57 @@
 public class App {
 
-    /* 測試 */
+    /* 展示Method的不同樣式 */
     // public static void main(String[] args) {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
 
         String testString = dev(1, 2);
 
-        // String testString1 = test1();
+        String testString1 = test1();
 
-        
-         System.out.println(testString);
+        System.out.println(testString);
     }
 
-    // 有傳入參數
-    public static String dev(int num1, int num2) {
+    // 公開,靜態, 有傳入參數(int, int), 回傳String
+    public static String test1(int num1, int num2) {
         String rTest = "test";
         return rTest;
     }
 
-    // 無傳入參數
-    public static String test1() {
+    // 公開, 靜態, 無傳入參數, 回傳String
+    public static String test2() {
         String rTest = "test";
         return rTest;
     }
 
-    // 不公開
-    private static String test12() {
+    // 私有, 靜態, 無傳入參數, 回傳String
+    private static String test3() {
         String rTest = "test";
         return rTest;
     }
 
-    // 無前贅字 
-    static String test13() {
+    // 無前贅字, 靜態, 無傳入參數, 回傳String
+    static String test4() {
         return "test13";
     }
 
-    // 無前贅字 無靜態關鍵字
-    String test14() {
+    // 無前贅字, 非靜態, 無傳入參數, 回傳String
+    String test5() {
         return "test14";
     }
 
-    // 保護且無靜態關鍵字
-    protected String test15() {
-        return "test15";
+    // 保護, 非靜態, 無傳入參數, 回傳int
+    protected String test6() {
+        int result = 77;
+        return result;
     }
 
-    // 無須回傳值
-    public void test2() {
+    // 公開, 非靜態, 無傳入參數, 無回傳
+    public void test7() {
         String rTest = "test";
     }
 
-    public boolean test() {
+    // 公開, 非靜態, 無傳入參數, 回傳布林
+    public boolean test8() {
         return false;
     }
 }
