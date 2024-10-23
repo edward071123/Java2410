@@ -1,5 +1,8 @@
+package Lesson1;
 import javax.swing.*;
+
 public class HolloWorldSwing {
+    /* Java的圖形界面 */
     public static void main(String[] args) {
         // 顯示畫面
         javax.swing.SwingUtilities.invokeLater(new Runnable() {

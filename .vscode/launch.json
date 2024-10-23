@@ -1,0 +1,56 @@
+{
+  // 使用 IntelliSense 以得知可用的屬性。
+  // 暫留以檢視現有屬性的描述。
+  // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MethodInfo",
+      "request": "launch",
+      "mainClass": "Lesson1.MethodInfo",
+      "projectName": "Java2410_88eb2b8"
+    },
+    {
+      "type": "java",
+      "name": "DemoUseClass",
+      "request": "launch",
+      "mainClass": "DemoUseClass",
+      "projectName": "Java2410_88eb2b8"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Demo",
+      "request": "launch",
+      "mainClass": "Demo",
+      "projectName": "Java2410_88eb2b8"
+    },
+    {
+      "type": "java",
+      "name": "HolloWorldSwing",
+      "request": "launch",
+      "mainClass": "HolloWorldSwing",
+      "projectName": "Java2410_88eb2b8"
+    },
+    {
+      "type": "java",
+      "name": "MethodInfo",
+      "request": "launch",
+      "mainClass": "MethodInfo",
+      "projectName": "Java2410_88eb2b8"
+    },
+    {
+      "type": "java",
+      "name": "MethodTraning",
+      "request": "launch",
+      "mainClass": "MethodTraning",
+      "projectName": "Java2410_88eb2b8"
+    }
+  ]
+}
