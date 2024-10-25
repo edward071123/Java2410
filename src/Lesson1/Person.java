@@ -1,4 +1,5 @@
 package Lesson1;
+
 class Person {
     public String personName;
     public static int personCount = 0; // 靜態變數宣告
@@ -13,7 +14,7 @@ class Person {
         System.out.println("pserson name is " + personName);
     }
 
-    // 靜態方法印出count
+    // 靜態方法印出count(人數)
     public static void callCountWithStatic() {
         System.out.println("Total persons is " + personCount);
     }

@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DemoUseClass",
+      "request": "launch",
+      "mainClass": "Lesson1.DemoUseClass",
+      "projectName": "Java2410_88eb2b8"
+    },
+    {
+      "type": "java",
       "name": "MethodInfo",
       "request": "launch",
       "mainClass": "Lesson1.MethodInfo",

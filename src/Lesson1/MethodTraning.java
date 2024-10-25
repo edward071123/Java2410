@@ -1,5 +1,8 @@
 package Lesson1;
+
 public class MethodTraning {
+    
+    /* 展示Method的使用 */
     public static void main(String[] args) throws Exception {
         System.out.println("========Method traning begin========");
         System.out.println("");
