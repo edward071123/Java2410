@@ -1,9 +1,9 @@
-package Lesson2.dev.one;
+package Lesson2.test.one;
 
 public class Animal {
     public String name;
 
-    public void showDevName(){
+    public void showTestName(){
         System.out.println(this.name);
     }
 }
