@@ -1,6 +1,6 @@
 package Lesson1;
 
-class Person {
+public class Person {
     public String personName;
     public static int personCount = 0; // 靜態變數宣告
 
