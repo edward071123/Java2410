@@ -1,6 +1,6 @@
 package Lesson1;
 
-class Car {
+public class Car {
   public String number;
   public String color;
   public boolean isTaix;
