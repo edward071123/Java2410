@@ -77,7 +77,12 @@ $ `jar -cvfm App.jar MANIFEST.MF -C bin/ . src/`
 
 
 ## 命名規則
-### 類別的命名原則
+### 套件(Package)的命名原則
+```
+package lesson2.work.dev
+```
+
+### 類別(Class)的命名原則
 ```
 // 主要採 Pascal Case 或 Upper Camel Case 命名法
 public class Stringifier {
@@ -85,7 +90,7 @@ public class Stringifier {
 }
 ```
 
-### 介面的命名原則
+### 介面(Interface)的命名原則
 ```
 // 以大寫 I 開頭，後續接介面名稱，主要採 Pascal Case 或 Upper Camel Case 命名法
 public interface IStringify {
@@ -120,7 +125,7 @@ public class Person {
 }
 ```
 
-### 方法的命名原則
+### 方法(Method)的命名原則
 ```
 // Lower Camel Case 命名法
 public class Tester {
@@ -205,13 +210,14 @@ boolean 型態可表示 true 與 false，分別代表邏輯的「真」與「假
 - 在物件層級更好的抽象。   
 - 降低從一個開發階段過渡到另一個開發階段的複雜性。
 
-OOP有四個主要特徵： 
-- 封裝 (安全性 易維護)
-- 遺產 (可繼承)
-- 多態性 (可重複使用)
-- 抽象 (功能性)
+特性:
+- 封裝（Encapsulation）
+- 繼承（Inheritance）
+  - 覆寫(Override)
+- 多型 (Polymorphism)
+- 多載（Overloading)
 
-## 方法(method)修飾子比較表
+## 方法(Method)修飾子比較表
 
 | 修飾子 | 同一類別 | 同一套件 | 不同套件的子類別 | 不同套件且非子類別 |
 | :-- | --: |:--:| :--:| :--:|
