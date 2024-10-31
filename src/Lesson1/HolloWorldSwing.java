@@ -1,4 +1,4 @@
-package Lesson1;
+package lesson1;
 import javax.swing.*;
 
 public class HolloWorldSwing {

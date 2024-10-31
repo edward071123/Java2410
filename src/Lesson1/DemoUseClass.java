@@ -1,4 +1,4 @@
-package Lesson1;
+package lesson1;
 public class DemoUseClass {
 
     /* 如何呼叫使用類別 */

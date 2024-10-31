@@ -1,4 +1,4 @@
-package Lesson2;
+package lesson2;
 
 public class Bank {
     // 情境: 這邊是你存入銀行的金額, 為了安全起見只能在銀行內才有讀寫

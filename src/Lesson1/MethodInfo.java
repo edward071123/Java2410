@@ -1,4 +1,4 @@
-package Lesson1;
+package lesson1;
 public class MethodInfo {
 
     /* 展示Method的不同樣式 */

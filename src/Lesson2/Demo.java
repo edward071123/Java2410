@@ -1,7 +1,6 @@
-package Lesson2;
+package lesson2;
 
-// import Lesson1.Person; <= 引用Lesson1下的Person類別
-import Lesson1.*; // <= 引用Lesson1下的所有類別(Person, Car)
+import lesson1.*;
 
 public class Demo {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Demo {
         person1.showName();
 
         // 完整實體化路徑 (無import)
-        Lesson1.Person person2 = new Lesson1.Person("EdwardFullPath");
+        lesson1.Person person2 = new lesson1.Person("EdwardFullPath");
         person2.showName();
 
         // 簡化實體化路徑 (有import)
@@ -24,17 +23,17 @@ public class Demo {
 
         // ============================ 呼叫不同資料夾同名稱Class範例 ============================
         // 開發
-        Lesson2.Work.Dev.Keybord keybord1 = new Lesson2.Work.Dev.Keybord("開發-機械鍵盤");
+        lesson2.work.dev.Keybord keybord1 = new lesson2.work.dev.Keybord("開發-機械鍵盤");
         keybord1.devShowObjectName();
 
-        Lesson2.Work.Dev.Mouse mouse1 = new Lesson2.Work.Dev.Mouse("開發-無聲滑鼠");
+        lesson2.work.dev.Mouse mouse1 = new lesson2.work.dev.Mouse("開發-無聲滑鼠");
         mouse1.devShowObjectName();
 
         // 測試
-        Lesson2.Work.Test.Keybord keybord2 = new Lesson2.Work.Test.Keybord("測試-機械鍵盤");
+        lesson2.work.test.Keybord keybord2 = new lesson2.work.test.Keybord("測試-機械鍵盤");
         keybord2.testShowObjectName();
 
-        Lesson2.Work.Test.Mouse mouse2 = new Lesson2.Work.Test.Mouse("測試-無聲滑鼠");
+        lesson2.work.test.Mouse mouse2 = new lesson2.work.test.Mouse("測試-無聲滑鼠");
         mouse2.testShowObjectName();
 
         System.out.println("============================================================");

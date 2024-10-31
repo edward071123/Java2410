@@ -1,4 +1,4 @@
-package Lesson2.Work.Dev;
+package lesson2.work.dev;
 
 public class Mouse {
     private String name;

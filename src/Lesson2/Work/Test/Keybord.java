@@ -1,4 +1,4 @@
-package Lesson2.Work.Test; // <= 告訴大家你在什麼資料夾下, 以src為根目錄的條件下
+package lesson2.work.test; // <= 告訴大家你在什麼資料夾下, 以src為根目錄的條件下
 
 public class Keybord {
     private String name;
