@@ -43,23 +43,13 @@ public class Demo {
         System.out.println("============================================================");
 
         // ================================== 寫法2 ================================
-        Shape polymorphismSh = new Shape();
-        polymorphismSh.drawShape();
-
-        System.out.println("============================================================");
-
-        Shape polymorphismCi1 = new Circle("c21");
-        polymorphismCi1.drawShape();
-
-        System.out.println("============================================================");
-
-        Shape polymorphismSq = new Square("sq21");
-        polymorphismSq.drawShape();
-
-        System.out.println("============================================================");
-
-        Shape polymorphismCi2 = new Circle("c22");
-        polymorphismCi2.drawShape();
+        Shape c21 = new Circle("c21");
+        Shape sq21 = new Square("sq21");
+        Shape c22 = new Circle("c22");
+        
+        c21.drawShape();
+        sq21.drawShape();
+        c22.drawShape();
 
         System.out.println("============================================================");
 
