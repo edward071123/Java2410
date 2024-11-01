@@ -12,6 +12,7 @@ public class Demo {
         spDog1.eat();
         spDog1.sleep();
         spDog1.catchTheBall();
+        spDog1.showAge();
         // ================================== 抽象&介面範例1結束 ================================
 
 

@@ -17,4 +17,7 @@ public class SpecialDog extends Dog implements ITraningSkill {
 		System.out.println("我領養的狗天生就會休息");
 	}
 
+	public void showAge() {
+		System.out.println("我從狗狗從" + age + "歲就被領養回來");
+	}
 }
