@@ -10,3 +10,5 @@
 - `src`: 根據課堂順序放置上課教受過的內容提供學員複習
 - `lib`: 依賴套件
 
+
+[上課影片](https://drive.google.com/drive/folders/1inzQCitTSRjhHj6ByvetMohYP3tXnsZC?usp=sharing) 
