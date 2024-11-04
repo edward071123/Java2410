@@ -8,14 +8,14 @@ public class Demo {
 
         Shape shape = new Shape();
         shape.drawShape();
-        shape.showShpeColor();
+        shape.showShapeColor();
         shape.getSize();
 
         System.out.println("============================================================");
 
         Circle circle = new Circle("c01");
         circle.drawShape();
-        circle.showShpeColor();
+        circle.showShapeColor();
         circle.showCircleColor();
         circle.getSize("XS");
         // 顯示自有方法
@@ -25,7 +25,7 @@ public class Demo {
 
         Square square = new Square("sq01");
         square.drawShape();
-        square.showShpeColor();
+        square.showShapeColor();
         square.showSquareColor();
         // 顯示自有方法
         square.showPerimeter();

@@ -14,7 +14,7 @@ public class Shape {
 		System.out.println("Shape size is XL");
 	}
 
-	public void showShpeColor() {
+	public void showShapeColor() {
 		System.out.println("Shape color is " + this.shapeColor);
 	}
 
