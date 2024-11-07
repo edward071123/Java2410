@@ -40,4 +40,4 @@
 - 至少需要內含一個 HourlyEmployee 實體物件 
 - 至少需要內含一個 SalariedEmployee 實體物件
 - 至少需要內含一個 ComrissionEmployee、一個 BasePlusCommissionEmployee 實體物件
-- 請利用toString、getTax、toString、getPaymentAmount 方法，進行 Employee 多型呼叫，以輸出所有應付帳款明細項目
+- 請利用toString、getTax、earnings、getPaymentAmount 方法，進行 Employee 多型呼叫，以輸出所有應付帳款明細項目
