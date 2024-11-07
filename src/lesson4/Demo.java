@@ -17,18 +17,18 @@ public class Demo {
 
 
         // ================================== 抽象&介面範例2開始 ================================
-        // System.out.println("============================================================");
-        // Fridge fridge = new Fridge("Big");
-        // fridge.preserveFoods();
-        // fridge.usePower();
-        // fridge.refrigerate();
-        // fridge.showSize();
+        System.out.println("============================================================");
+        Fridge fridge = new Fridge("Big");
+        fridge.preserveFoods();
+        fridge.usePower();
+        fridge.refrigerate();
+        fridge.showSize();
 
-        // System.out.println("============================================================");
+        System.out.println("============================================================");
 
-        // Oven oven = new Oven();
-        // oven.usePower();
-        // oven.heatFood();
+        Oven oven = new Oven();
+        oven.usePower();
+        oven.heatFood();
         // ================================== 抽象&介面範例2結束 ================================
 
         System.out.println("============================================================");
