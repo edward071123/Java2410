@@ -1,6 +1,6 @@
 package lesson5;
 
 public interface ISwim {
-    public void swim();
-    
+    public void swimFreeStyle();
+    public void swimBackStyle();
 }

@@ -8,44 +8,61 @@ package lesson5;
  */
 public class Demo {
     public static void main(String[] args) {
-        // 介面寫法1 =======================================
+        // 需要被大量使用的寫法 =======================================
+        Person person1 = new Person();
+        person1.swimFreeStyle();
+
+        Person person2 = new Person();
+        person2.swimFreeStyle();
+
+
+        // 寫法1 =================================================
         ISwim s = new ISwim() {
+            public void swimFreeStyle() {
+                System.out.println("I can free style swim. -- Anonymous1");
+            }
 
             @Override
-            public void swim() {
-                System.out.println("I can swim -- 1!!");
+            public void swimBackStyle() {
+                System.out.println("I can back style swim. -- Anonymous1");
             }
         };
 
-        s.swim();
-        // =============================================
+        s.swimFreeStyle();
+        s.swimBackStyle();
+        // ============================================================
 
-        // 介面寫法2 =======================================
+        // 寫法2 =================================================
         new ISwim() {
-
             @Override
-            public void swim() {
-                System.out.println("I can swim -- 2!!");
+            public void swimFreeStyle() {
+                System.out.println("I can free style swim. -- Anonymous2");
             }
-        }.swim();
-        // =============================================
-
-        // 介面寫法3 =======================================
-        method(new ISwim() {
 
             @Override
-            public void swim() {
-                System.out.println("I can swim -- 3!!");
+            public void swimBackStyle() {
+                
+            }
+
+        }.swimFreeStyle();
+        // ============================================================
+
+        // 寫法3 =======================================================
+        method(new ISwim() {
+            @Override
+
+            public void swimFreeStyle() {
+                System.out.println("I can free style swim -- Anonymous3");
+            }
+
+            @Override
+            public void swimBackStyle() {
+                System.out.println("I can back style swim. -- Anonymous3");
             }
         });
-        // =============================================
+        // ===================================================================
 
-        // 介面lambda寫法 =======================================
-        method(() -> System.out.println("I can drive -- lambda!!"));
-
-        // =============================================
-
-        // 抽象類別寫法 =======================================
+        // 寫法4 =============================================================
         new Eat() {
 
             @Override
@@ -54,12 +71,30 @@ public class Demo {
             }
         }.eatingAlot();
 
-        // =============================================
+        // ===================================================================
 
+        // lambada演化 =============================================================
+        // 原本呼叫式
+        runMethod(new IRun() {
+            @Override
+            public void run(String name) {
+                System.out.println(name + " can run fast. -- Anonymous3");
+            }
+
+        });
+
+        // lambada一行搞定
+        runMethod((String name) -> System.out.println(name + " can run fast. -- lambada"));
 
     }
     
     public static void method(ISwim s) {
-        s.swim();
+        s.swimFreeStyle();
+        s.swimBackStyle();
     }
+
+    public static void runMethod(IRun s) {
+        s.run("David");
+    }
+
 }
