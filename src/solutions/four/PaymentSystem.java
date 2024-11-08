@@ -1,6 +1,6 @@
 package solutions.four;
 
-public class paymentAmount {
+public class PaymentSystem {
     public static void main(String[] args) {
         System.out.println("=========================================================");
         Employee employee1 = new HourlyEmployee("David", "0911121001", 500, 40);
