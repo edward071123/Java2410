@@ -67,7 +67,7 @@ public class Demo {
 
             @Override
             public void eatingAlot() {
-                System.out.println("I can eat alot -- abstract!!");
+                System.out.println("I can eat alot -- Anonymous2");
             }
         }.eatingAlot();
 
@@ -85,6 +85,7 @@ public class Demo {
 
         // lambada一行搞定
         runMethod((String name) -> System.out.println(name + " can run fast. -- lambada"));
+
 
     }
     
