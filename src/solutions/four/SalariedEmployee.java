@@ -39,8 +39,8 @@ public class SalariedEmployee extends Employee{
     @Override
     public String toString() {
         String result = "以下為Salaried員工基本資料\r\n";
-        result += "姓名: " + super.getName() + "\r\n";
-        result += "手機: " + super.getMobile() + "\r\n";
+        result += "姓名: " + this.getName() + "\r\n";
+        result += "手機: " + this.getMobile() + "\r\n";
        return result;
     }
 
@@ -52,7 +52,7 @@ public class SalariedEmployee extends Employee{
 
     @Override
     public void getPaymentAmount() {
-        double earnings =this.getGrossSales() * this.getCommissionRate() + this.getBaseSalary();
+        double earnings = this.getGrossSales() * this.getCommissionRate() + this.getBaseSalary();
         double tax = (this.getGrossSales() * this.getCommissionRate() + this.getBaseSalary()) * 0.05;
         double paymentAmount = earnings - tax;
         System.out.println("取得員工扣稅所得: " + paymentAmount);
