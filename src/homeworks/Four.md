@@ -34,7 +34,7 @@
 - 各種屬性實體孌數於操作屬性寫入時需實作數值合理範圍的檢查功能
 
 ### 任務六：設計一個類別 「BasePlusCommissionEmployee」，繼承 「CommissionEmployee」:
-- 將 CommissionEmployee 之獎金比率提高 30%
+- 將 CommissionEmployee 之獎金比率提高至 30%
 
 ### 任務七：設計一個類別 「PaymentSystem」，具備程式進入點Main()功能，利用多型印出各個員工的薪資：
 - 至少需要內含一個 HourlyEmployee 實體物件 
