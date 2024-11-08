@@ -85,8 +85,16 @@ public class Demo {
 
         // lambada一行搞定
         runMethod((String name) -> System.out.println(name + " can run fast. -- lambada"));
+        // ===================================================================
 
-
+        // 匿名類別直接繼承的特性
+        new Person() {
+            @Override
+            public void swimBackStyle() {
+                System.out.println("I can back style swim1. --- extends");
+                System.out.println("I can back style swim2. --- extends");
+            }
+        }.swimBackStyle();
     }
     
     public static void method(ISwim s) {
