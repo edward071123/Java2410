@@ -83,7 +83,7 @@ public class Demo {
 
         });
 
-        // lambada一行搞定
+        // lambada一行搞定(只能interface才能使用)
         runMethod((String name) -> System.out.println(name + " can run fast. -- lambada"));
         // ===================================================================
 
