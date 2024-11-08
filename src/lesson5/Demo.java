@@ -95,6 +95,20 @@ public class Demo {
                 System.out.println("I can back style swim2. --- extends");
             }
         }.swimBackStyle();
+
+        // 匿名類別定義新method可直接使用
+        new Person() {
+            public void swimFrogStyle() {
+                System.out.println("I can frog style swim1. --- extends");
+            }
+        }.swimFrogStyle();
+
+        // 匿名類別定義新method無法用其他method呼叫
+        // personSwim(new Person() {
+        //     public void swimFrogStyle() {
+        //         System.out.println("I can frog style swim1. --- extends");
+        //     }
+        // });
     }
     
     public static void method(ISwim s) {
@@ -105,5 +119,9 @@ public class Demo {
     public static void runMethod(IRun s) {
         s.run("David");
     }
+
+    // public static void personSwim(Person s) {
+    //     s.swimFrogStyle();
+    // }
 
 }
