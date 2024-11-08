@@ -85,6 +85,12 @@ public class Demo {
 
         // lambada一行搞定(只能interface才能使用)
         runMethod((String name) -> System.out.println(name + " can run fast. -- lambada"));
+
+        // lambada多行覆寫表示方式
+        runMethod((String name) -> {
+            System.out.println(name + " can run fast. -- lambada11");
+            System.out.println(name + " can run fast. -- lambada22");
+        });
         // ===================================================================
 
         // 匿名類別直接繼承的特性
