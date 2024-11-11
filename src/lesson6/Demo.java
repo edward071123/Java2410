@@ -1,5 +1,12 @@
 package lesson6;
 
+import java.io.FileWriter;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 /*
  * 介紹 try catch 用法
  */
@@ -17,21 +24,37 @@ public class Demo {
             System.out.println("result:" + result );
         } catch (ArrayIndexOutOfBoundsException ex) {
             // ex.getMessage()通常寫入系統錯誤的log檔讓開發工程師查看
-            System.out.println(ex.getMessage());
+            writeLog(ex.getMessage());
             System.out.println("Array出錯了");
         } catch (ArithmeticException ex) {
             // ex.getMessage()通常寫入系統錯誤的log檔讓開發工程師查看
-            System.out.println(ex.getMessage());
+            writeLog(ex.getMessage());
             System.out.println("除的時候出錯了");
         } catch (Exception ex) {
             // ex.getMessage() 通常寫入系統錯誤的log檔讓開發工程師查看
             // ex.fillInStackTrace() 通常寫入系統錯誤的log檔讓開發工程師查看
-            System.out.println(ex.getMessage());
-            System.out.println(ex.fillInStackTrace());
+            writeLog(ex.getMessage());
             System.out.println("出錯了");
         } finally {
             // 最終都會跑進來這
             System.out.println("done.");
+        }
+    }
+
+    public static void writeLog(String error) {
+        try {
+            // 取得當下時間
+            LocalDateTime localDate = LocalDateTime.now();
+            // 時間格式化
+            DateTimeFormatter format = DateTimeFormatter.ofPattern("uuuu-MM-dd HH:mm:ss");
+            // 開啟檔案串流準備寫入檔案
+            FileWriter fw = new FileWriter("D:\\MyJava\\Java2410\\src\\lesson6\\log.txt", true);
+            fw.write("錯誤發生: " + error + "     " + format.format(localDate) + "\r\n");
+            fw.flush();
+            fw.close();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println("寫入log檔出現問題");
         }
     }
 }
