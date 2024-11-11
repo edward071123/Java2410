@@ -1,6 +1,7 @@
 package lesson6;
 
 import java.io.FileWriter;
+import java.nio.charset.Charset;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -16,7 +17,7 @@ public class Demo {
         int b = 0;
 
         String[] testString = {"a", "b", "c", "d"}; 
-        int[] testInt = {1, 2, 3};
+        // int[] testInt = {1, 2, 3};
         
         try {
             System.out.println(testString[4]);
@@ -47,8 +48,11 @@ public class Demo {
             LocalDateTime localDate = LocalDateTime.now();
             // 時間格式化
             DateTimeFormatter format = DateTimeFormatter.ofPattern("uuuu-MM-dd HH:mm:ss");
-            // 開啟檔案串流準備寫入檔案
-            FileWriter fw = new FileWriter("D:\\MyJava\\Java2410\\src\\lesson6\\log.txt", true);
+            // 寫入的檔案路徑
+            String filePath = "D:\\MyJava\\Java2410\\src\\lesson6\\log.txt";
+            // 開啟檔案串流準備寫入檔案, 設定utf-8寫入中文不會亂碼
+            FileWriter fw = new FileWriter(filePath, Charset.forName("utf-8"), true);
+            // 寫入內容
             fw.write("錯誤發生: " + error + "     " + format.format(localDate) + "\r\n");
             fw.flush();
             fw.close();
